@@ -1,10 +1,52 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 75vw 25vw;
+  grid-template-rows: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.background-cont {
+  grid-column: 1/3;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #61636D;
+  z-index: 0;
+}
+
+.bg {
+  background: url(https://www.google.com/url?sa=i&source=images&cd=&cad=
+    rja&uact=8&ved=2ahUKEwjJwp33m5vfAhUOmeAKHQ0QAuMQjRx6BAgBEAU&url=http%
+    3A%2F%2Fwww.upout.com%2Fblog%2Fsan-francisco-3%2F25-facts-might-not-know-
+    painted-ladies&psig=AOvVaw0TaMNgH6ylZ-q8Kg-H2wC5&ust=1544735933225227);
+  /*min-height: 100%;*/
+  /*width: 100%;*/
+  height: 100%;
+  opacity: 0.65;
+  min-width: 1024px;
+  background-size: cover;
+  left: 0;
+
+  /*background-size: 50% 50%;
+  
+  /* Set up proportionate scaling */
+  /*width: 100%;
+  height: auto;*/
+  
+   /*Set up positioning */
+  position: fixed;
+  /*top: 0;
+  left: 0;*/
+}
+
+.name {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .App-header {
